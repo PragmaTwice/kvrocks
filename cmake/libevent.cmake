@@ -29,6 +29,8 @@ if(ENABLE_OPENSSL)
   set(libevent_disable_ssl OFF)
 endif()
 
+set(CMAKE_POLICY_VERSION_MINIMUM 3.1)
+
 FetchContent_MakeAvailableWithArgs(libevent
   EVENT__DISABLE_TESTS=ON
   EVENT__DISABLE_REGRESS=ON
